@@ -1,0 +1,90 @@
+/**
+ * re:GAF #{$s-version}
+ * by hateradio (aka HofR)
+ */
+html, body {
+	background: #CECEC6 url($i-background) !important;
+}
+
+b, strong {
+	font-weight: bold
+}
+
+code, pre {
+	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace !important;
+}
+
+u a,
+a u {
+	text-decoration: none !important;
+}
+
+select, textarea, input[type="text"], input[type="password"] {
+	background: #FBFBFB !important;
+	border: 1px solid #CCCCCC;
+    border-radius: 1px;
+    transition: border 0.3s ease 0s;
+	// transition: all 0.3s linear 0s;
+
+	&:hover {
+	    background: #fcfcfc !important;
+	    border: 1px solid #E4A9A9 !important;
+	}
+
+	&:focus {
+	    border: 1px solid #E78E8E !important;
+	    box-shadow: 0 0 3px #E8D977 !important;
+	}
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	padding: 4px 10px !important;
+}
+
+input.button {
+    // background-image: linear-gradient(#EAE6E1, #C6C3B8) !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #DED1D1 #C2B8B2 #CDB9AA #E1D2CB !important;
+    color: #3E3535 !important;
+    padding: 4px 10px !important;
+    text-shadow: 0 0 2px #FEFEFE !important;
+    border-radius: 2px !important;
+    background-color: #F7F2EE !important;
+    background-image: linear-gradient(#F7F2EE, #E1DFD0) !important;
+    box-shadow: 0 0 2px #EFEFEF inset !important;
+    margin: 0 2px !important;
+
+    &:hover {
+    	background-image: linear-gradient(#F7EEE3, #EDE9DF) !important;
+        // border: 1px solid #ABA7A5 !important;
+        // border-radius: 3px;
+        // box-shadow: 0 0 2px #EFEFEF inset !important;
+        // color: #3E3535 !important;
+        // padding: 5px 10px 3px !important;
+        // text-shadow: 0 0 2px #FEFEFE !important;
+    }
+}
+
+
+// .fieldset {
+// 	border: 1px solid transparent !important
+// }
+
+.fieldset, fieldset.fieldset {
+    border: 1px solid #CCBFB6 !important;
+    border-radius: 1px 1px 1px 1px !important;
+    box-shadow: 0 0 2px rgba(200, 200, 200, .6) inset
+}
+
+legend {
+    color: #434343 !important;
+}
+
+// other global settings
+::-moz-selection { background: #599BC4; color: #fff; text-shadow: none !important; }
+::-webkit-selection { background: #599BC4; color: #fff; text-shadow: none !important; }
+::selection { background:#599BC4; color: #fff; text-shadow: none !important; }

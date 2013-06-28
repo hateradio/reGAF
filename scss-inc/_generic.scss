@@ -1,0 +1,153 @@
+/**
+ * main
+ */
+#toolbar {
+    background-color: rgba(176, 172, 165, 0.33) !important;
+}
+
+#header {
+	background-color: rgba(255, 255, 255, 0.2) !important;
+	box-shadow: 0 0 3px #888;
+	margin: 0 !important
+}
+
+#main {
+	background: transparent !important
+}
+
+// #logo {
+// 	background: url(http://www.neogaf.com/forum/images/neogaf2/neogaf_gold.png) !important
+// }
+
+/* index */
+// #splash {
+// 	background: rgba(238, 238, 238, 0.45) !important
+// }
+
+#forum-list {
+    // background: linear-gradient(#C45516, #8E2326) repeat scroll 0 0 #9F4315 !important;
+    background: linear-gradient(#E86C24, #A23827) repeat scroll 0 0 #BF5619 !important;
+    box-shadow: 0 0 3px #D3D3D3, 0 0 3px rgba(215, 182, 182, 0.99) inset !important;
+    color: #D6C3A3 !important;
+}
+
+.forum-bit-lastpost {
+    border-left: 1px dotted #B88254 !important;
+}
+
+#forum-extras {
+	color: #B1AF9E !important;
+	background: rgba(0, 0, 0, 0.67) !important
+}
+
+[class^="forumextraicon-"], [class*=" forumextraicon-"],
+.forum-info > .forumicon {
+	background-color: transparent !important
+}
+
+#forum-stats {
+    color: #4F4646 !important;
+}
+
+.activeuserlist-users {
+    text-align: justify;
+}
+
+#footer .wrap {
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+.footer-links {
+    background: #333 !important;
+    border: 0 none !important;
+    padding: 18px 45px;
+
+	.left:after {
+		content: "re:GAF Skin (#{$s-version}) by hateradio \00a9  2008 - 2013. Don't remove this line.";
+		display: block;
+		cursor: help;
+		font-size: 11px
+	}
+}
+
+/* ads */
+#alpha, #bravo, #charlie {
+	& > div {
+		background-color: rgba(0, 0, 0, 0.1) !important;
+	}
+}
+
+#header #alpha {
+    float: right !important
+}
+
+/* table */
+.tborder {
+    // border: 1px solid rgba(238, 238, 238, 0.63);
+    border: 2px solid rgba(255, 255, 255, 0.76) !important;
+    box-shadow: 0 0 3px #776050;
+    border-radius: 3px;
+}
+
+.tborder + .tborder {
+	margin-top: 6px;
+}
+
+.vbmenu_control {
+    background: linear-gradient(#DEDEDB, #D5D5D5) repeat scroll 0 0 #D9D9D0 !important;
+}
+
+.vbmenu_option {
+    // background: linear-gradient(#DEDEDB, #D5D5D5) repeat scroll 0 0 #D9D9D0 !important;
+    color: #333333;
+    padding: 4px 8px;
+    white-space: nowrap;
+}
+
+
+// profile avatar
+img[src*="type=thumb"] {
+    border: 0 none !important;
+}
+
+/* misc */
+
+.spoiler {
+	margin-top: 4px;
+	cursor: default;
+	border-radius: 1px !important;
+	background: #333 !important;
+	color: #333 !important;
+}
+
+.spoiler:hover, .spoiler.show {
+	background: transparent !important;
+}
+
+
+// calendar
+img[src="images/neogaf2/misc/calendar_popup.png"] {
+    vertical-align: middle !important;
+}
+
+.tborder.vB_DatePicker.page {
+    background: none repeat scroll 0 0 #F8F6F4 !important;
+    border-radius: 3px;
+}
+
+/* extras */
+
+// QQRE
+.inpost .newreplybox {
+    margin: 10px auto 0 !important;
+}
+
+#main > form > .newreplybox {
+    max-width: 710px;
+    @extend .postbit.alt1;
+
+    #qqre_subs {
+    	margin-top: 6px;
+    }
+}

@@ -1,0 +1,114 @@
+// yes tabs get their own page
+
+// transparent
+// background: none repeat scroll 0 0 rgba(171, 69, 49, 0.02) !important;
+// border: 1px solid #B4B4B4;
+// box-shadow: 0 0 3px #EEEEEE inset;
+// color: #847F7F !important;
+
+ul.forum-tabs {
+    margin: 0 2px 0 !important;
+    padding:0 !important;
+    min-height: 18px !important;
+
+    li {
+        margin: 0 0 0 !important;
+        padding: 0 !important;
+
+        & > a {
+            transition: none;
+
+            &:link, &:visited {
+                // background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAUCAMAAAAtBkrlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADlQTFRF////4uLdwLSe4trNvrKb5d7TzMzMxsCxv7Oc7+/s5NzQ3dPF4ODbtqKDyLmiwbejyMO1xb6uzsGscqx/6QAAAEhJREFUeNrs1MkRwCAMBEFxrTA2Z/7BWkHsi9IE0M8RfIEXAHmEmYHcmpLBUtlgdtBBB28AWyb/8FRbYqL1jq4G7khrLvwCDADYeQMtQEHR4wAAAABJRU5ErkJggg==) !important;
+                // background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAAARCAMAAAC1pzGAAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADZQTFRF////zMzMvLmwxL+1w8K8ta2h5ubkt7KoxMK8vbmxt7ClwL63vLiw7ern4ODgwb+43Nzb/Pz8lVGKqAAAABJ0Uk5T//////////////////////8A4r+/EgAAAEJJREFUeNrs08EBgCAQA8EEEFEETf/N0gPxeVvA/BailYQPTpOCGekKudlCCSGEn4VqAeMmvLmPUxD7k3a7XmkJMACfvwJDTf+j8AAAAABJRU5ErkJggg==) !important;
+                border: 1px solid #BBBBBB;
+                box-shadow: 0 0 1px 1px #fff inset;
+                font: bold 10px/22px arial,sans-serif !important;
+                padding: 0 !important;
+                text-shadow: 0 1px 0 #FFFFFF;
+                background: #E3E3E3 !important;
+                width: 100px !important;
+                text-align:center;
+                color: #333 !important;
+                text-transform: uppercase !important;
+                min-height: 22px !important;
+                border-radius: 3px 0 0 0 !important;
+                opacity: .7;
+                // text-shadow: 1px 1px 0 #fff !important;
+            }
+
+            &:hover {
+                // background: linear-gradient(#DDDDDD, #CCCCCC) repeat scroll 0 0 #D9D9D9 !important;
+                // // box-shadow: 0 0 1px 1px #EAEAEA inset;
+                // color: #222222 !important;
+                // text-shadow: 0 1px 0 #FFF;
+                // @extend .large-button.submit:hover;
+
+                @include red-button;
+                box-shadow: 0 0 2px #FF1CBA inset !important;
+                opacity: 1;
+            }
+
+            &:after, &:before {
+                display: none !important
+            }
+        }
+
+        &.child {
+            margin-right: 5px !important;
+
+            & a {
+                &:link, &:visited {
+                    // background: #E1E1DB !important;
+                    border-radius: 0px 3px 0px 0px !important;
+                    // color: #333 !important;
+                }
+
+            //     &:hover {
+            //         background-image: linear-gradient(#FF552A, #D3301E) !important;
+            //     }
+            }
+        }
+
+        &.activetab {
+
+            & > a {
+                &:link, &:visited {
+                    opacity: 1;
+                    background: linear-gradient(#F2F2F2, #E4E2E0) repeat scroll 0 0 #ccc !important;
+                }
+
+                &:hover {
+                    // border: 1px solid #A7A7A7
+                    background-image: linear-gradient(#FF552A, #D3301E) !important;
+                }
+            }
+        }
+    }
+
+    &.bot {
+        position: relative !important;
+        top: 0px !important;
+        left: 0px !important;
+        border: 0 !important;
+        
+        #posts + & {
+            margin-top: -3px !important;
+        }
+
+        li {
+            a {
+                border-radius: 0 0 0 3px  !important
+            }
+
+            &.child a {
+                border-radius: 0 0 3px 0 !important
+            }
+
+            &.toplink a {
+                border-radius: 0 0 3px 3px !important
+            }
+        }
+
+    }
+}

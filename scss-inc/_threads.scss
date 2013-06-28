@@ -1,0 +1,124 @@
+.head, .thead {
+	// background: rgba(184, 147, 147, 0.14) !important;
+    background: #CACBC5 !important;
+    color: #444 !important;
+    font-size: 11px !important;
+    text-shadow: 0 0 2px #FFF !important;
+}
+
+#threadslist .thead {
+    background: transparent !important;
+}
+
+// #poststop ~ 
+.tcat {
+    // background: linear-gradient(#EA5F3D, #CB4E2F) repeat scroll 0 0 #CB4E2F;
+    background: linear-gradient(#EA512B, #D03F1B) repeat scroll 0 0 #CB4E2F;
+    border: 1px solid #CC5252 !important;
+    border-radius: 4px !important;
+    // box-shadow: 0 0 2px #DDA96D, 0 0 3px #FC4343 inset !important;
+    box-shadow: 0 0 2px #DDA96D, 0 0 3px #FF9580 inset !important;
+    margin: 0 0 4px !important;
+    padding: 16px 10px !important;
+    text-shadow: 0 0 1px rgba(94, 25, 25, 0.89) !important;
+}
+
+.tcat, .tfoot {
+    // background-color: #CB4E2F !important
+    // background-color: #CFC8C2 !important
+	background-color: #D3D1CE !important
+}
+
+.tfoot {
+    color: #393939 !important;
+    border-radius: 0 0 3px 3px;
+}
+
+// .threadbit > td:first-child {
+//     border-left: 1px solid #fff;
+// }
+
+// .threadbit > td:last-child {
+//     border-right: 1px solid #fff;
+// }
+
+// .threadbit.announcement:first-child td {
+//     border-top: 1px solid #fff;
+// }
+
+
+.threadbit.alt1:last-child td {
+    border: 0 !important;
+}
+
+// highlight thread creator
+.threadbit.alt1 {
+    td[nowrap]:nth-child(3n),
+    td[align]:nth-child(5n) {
+        background: none repeat scroll 0 0 rgba(150, 120, 109, 0.1) !important;
+    }
+}
+
+// announcement
+.thread-prefix {
+    // background-image: linear-gradient(#e3d7bc, #C95757) !important;
+    border: 1px solid #D95252 !important;
+    background-color: #E66349 !important;
+    background-image: linear-gradient(#E66349 , #DC4E4E) !important;
+    border-radius: 2px !important;
+    // box-shadow: 0 0 2px #fff;
+    color: #fff !important;
+    text-shadow: 0 0 2px #7A2B2B;
+}
+
+// search
+.tcat-tools {
+	background: transparent !important
+}
+.tcat-tools > a {
+	border: 0 !important
+}
+
+/* navigation */
+.pagenav > li {
+    color: #4A4A4A !important;
+}
+
+// .pagenav > li.current > span {
+//     background: linear-gradient(#FB7339, #E44E18) !important;
+//     border: 1px solid #D25A5A !important;
+//     box-shadow: 0 0 2px #EBEBEB, 0 0 1px #B08729 !important;
+//     color: #fff !important;
+//     text-shadow: 0 0 1px #66064C !important;
+// }
+
+.alt1, .alt1Active {
+	background: #E1E1DB !important;
+	background-image: linear-gradient(#e1e1db, #ddd) !important;
+
+    &.div {
+    	box-shadow: 0 0 2px #bbb inset;
+    	border-radius: 2px
+    }
+}
+
+div.alt1, div.alt1Active, div.alt2, div.alt2Active {
+    border-radius: 2px
+}
+
+div.alt2, div.alt2Active { // tr.threadbit :nth-child(2n) 
+    background-image: linear-gradient(#e1e1db, #ddd) !important;
+    box-shadow: 0 0 3px 1px rgba(187, 187, 187, 0.59) inset;
+}
+
+td.alt2 {
+	// border-bottom: 1px solid #A3A3A3 !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+}
+
+/* highlight mypost (my threads) */
+.threadbit.mypost {
+    border-radius: 3px !important;
+    box-shadow: 0 0 4px #F47649 inset !important; // #3389FF
+}

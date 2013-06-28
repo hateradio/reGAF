@@ -1,0 +1,205 @@
+/**
+ * links aka anchors
+ */
+
+// main (monochrome) links
+
+.alt1,
+.alt2,
+.alt1Active,
+.alt2Active,
+.threadbit,
+.vbmenu_control,
+// #collapseobj_usercp_subthreads,
+.tfoot,
+.thead {
+	a:link {
+		// color: #3D3930 !important;
+		color: #3C3C3C !important;
+		text-decoration: none !important;
+	}
+
+	a:visited {
+		color: #333 !important;
+		text-decoration: none !important;
+	}
+
+	a:hover {
+		// color: #4F4E4A !important;
+		color: #ED2F00 !important;
+		text-decoration:none!important;
+	}
+}
+
+// colored links
+
+.usercp-sidebar dl > dt > a,
+.pagenav > li > a, // , .pagenav > li > a:visited
+.threadbit-pagenav a,
+.postbit-post a {
+	&:link {
+		color: #DC1600 !important;
+	}
+
+	&:visited {
+		color: #C43E2F !important;
+	}
+
+	&:hover {
+		// color: #DC1600 !important;
+		// background: rgba(255, 255, 255, 0.56) !important;
+    	color: #934A4A !important;
+	}
+}
+
+// thread titles
+
+.threadbit a.threadbit-title {
+    & {
+        color: #484231 !important;
+    }
+
+	&:hover {
+        // color: #A03500 !important;
+    	color: #C13C03 !important;
+	}
+}
+
+// lower level misc links
+
+a {
+	transition: color 0.1s linear 0s;
+
+	&.tcat-link {
+		color: #F7F3E6 !important; //D7CFA5
+	}
+
+    // thread topic icons
+    &:hover i[class*="topicicon-"] {
+        opacity: 0.75;
+    }
+
+    // toolbar
+    #headernav &, #headeruser .headeruserbit > & {
+        &:link, &:visited {
+            color: #554848 !important
+        }
+
+        &:hover {
+            color: #282824 !important
+        }
+    }
+
+    // username
+	.postbit-details-username & {
+		&:link, &:visited {
+			color: #ED4F27 !important
+		}
+
+		&:hover, &:hover * {
+			color: #E02A0E !important
+		}
+		
+	}
+}
+
+
+/* buttons */
+@mixin red-button {
+    transition: none;
+    background-color: #DC4520 !important;
+    background-image: linear-gradient(#FF552A, #D3301E) !important;
+    border-color: #FF9378 #E03232 #B73000 #FF5619 !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    font-weight: bold !important;
+    box-shadow: 0 0 2px #EBEBEB, 0 0 1px #B08729, 0 0 2px #FF1CBA inset, 1px 1px 1px rgba(163, 149, 149, 0.78) !important;
+    color: #FFFFFF !important;
+    text-shadow: 0 0 2px #6F1212 !important;
+}
+@mixin orange-button {
+    transition: none;
+    background-color: #DC4520 !important;
+    background-image: linear-gradient(#FFBC08, #F1822D) !important;
+    border-color: #FFAB63 #FF9D48 #C57F25 #F7A429 !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    box-shadow: 0 0 2px #EBEBEB, 0 0 1px #B08729, 0 0 2px #FFE1AD inset, 1px 1px 1px rgba(163, 149, 149, 0.5) !important;
+    color: #FFFFFF !important;
+    font-weight: bold !important;
+    text-shadow: 0 0 3px #6F1812 !important;
+    transition: none;
+}
+@mixin white-button {
+    transition: none;
+    font-weight: bold !important;
+    background: linear-gradient(#F9F9F9, #DEDEDE) !important;
+    // box-shadow: 0 0 2px #A0A0A0 !important;
+    box-shadow: 1px 1px 1px rgba(133, 149, 153, 0.5), 0 0 2px #B4AFAF !important;
+    border: 1px solid #EBEBEB !important;
+    text-shadow: none !important;
+    // color: #DC1600 !important;
+    color: #DC4900 !important;
+}
+
+.pagenav > li > a {
+    border: 1px solid transparent !important;
+    transition: none;
+}
+
+.large-button, a.large-button {
+    & {
+        @include orange-button;
+    }
+
+    &:hover {
+        @include white-button;
+    }
+
+    &.submit {
+        & {
+            @include white-button;
+        }
+
+        &:hover {
+            @include orange-button;
+        }
+    }
+}
+
+.pagenav > li.current > span {
+    @include white-button;
+}
+
+.pagenav > li > a:not([name]):hover {
+    @include red-button;
+}
+
+// .large-button.submit:hover, a.large-button.submit:hover {
+// 	background-color: #C93323 !important;
+// 	border-color: #C24229 !important;
+// 	box-shadow: 0 0 2px #EBEBEB, 0 0 1px #B08729, 0 0 3px #D66C6C inset !important
+// }
+
+a:hover .lastposticon-threadbit {
+    background-position: -20px -285px !important;
+}
+
+// index
+.stats-whatsgoingon a {
+    color: #4A4A4A !important;
+}
+
+/* POP MENUs */
+.vbmenu_option > a,
+.vbmenu_hilite a {
+	color: #444 !important
+}
+
+.vbmenu_hilite {
+	background: #dadada !important;
+
+	a:hover {
+		color: #111 !important
+	}
+}

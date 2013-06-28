@@ -1,0 +1,94 @@
+.usercp-sidebar {
+
+	& > h3 > a {
+		&:link, &:visited {
+    		color: #474747 !important;
+    		font-weight: bold;
+    	}
+
+    	&:hover {
+    		color: #96250E !important
+    	}
+	}
+
+	dl
+	// , dl > dt > a {
+	{
+	    color: #E02323 !important;
+	}
+
+	dd {
+	 	a, span {
+			background-color: transparent !important
+		}
+	}
+}
+
+// dropdown
+.dropdown {
+    background: linear-gradient(#4E4D4D, #403D3D) repeat scroll 0 0 #444 !important;
+    border-radius: 3px !important;
+    box-shadow: 0 0 3px 1px rgba(125, 123, 123, 0.76) inset, 0 0 0 3px rgba(33, 31, 31, 0.51) inset !important;
+
+    li:hover > a {
+        background: linear-gradient(#929292, #888787) repeat scroll 0 0 #D9D9D0 !important;
+    }
+}
+
+// control panel
+
+// .thead {
+// 	border: 0 !important;
+// }
+
+// .panel {
+//     background-color: #EBEBEA !important;
+//     background-image: -moz-linear-gradient(center top , #EBEBEA, #E8E8E4);
+// 	box-shadow: 0 0 3px 1px #CFC1C1;
+// }
+
+.panel {
+    background-color: rgba(255, 255, 255, 0.34) !important;
+    border: 1px solid #C2B9B9 !important;
+    border-radius: 1px !important;
+    box-shadow: 0 0 3px 1px #F1EEE5 inset !important;
+}
+
+.panelsurround {
+    background-color: rgba(255, 237, 237, 0.18) !important;
+}
+
+/* inbox */
+.no-posts {
+    background-color: rgba(238, 238, 238, 0.66) !important;
+}
+
+.with-usercp-sidebar td.alt2[style*="border"] {
+    border-bottom: 1px solid #A3A3A3 !important;
+}
+
+.vbmenu_popup {
+    background: #E1E1DB !important;
+    border: 2px solid #fff !important;
+    border-radius: 2px;
+    box-shadow: 0 0 3px #6C6C6C !important;
+    clip: auto !important;
+    color: #000 !important;
+
+    table {
+        border-spacing: 0 !important;
+    }
+
+    .thead {
+        background: linear-gradient(#FFA307, #EE6A05) repeat scroll 0 0 #E4E4AB !important;
+        border-color: #E3925D #BC8B5A #C96737 #DC8C26 !important;
+        border-radius: 3px 3px 0 0;
+        border-style: solid !important;
+        border-width: 1px !important;
+        color: #FFFFFF !important;
+        font-size: 12px !important;
+        padding-bottom: 5px !important;
+        padding-top: 5px !important;
+        text-shadow: 1px 1px 2px #A74311 !important;
+    }
+}

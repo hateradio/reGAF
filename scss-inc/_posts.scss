@@ -1,0 +1,222 @@
+/* posts */
+#posts > div {
+	margin: 3px 0;
+	color: #333 !important
+}
+
+.postbit {
+	padding-left: 130px !important;
+}
+
+.postbit-details {
+	margin-left: -130px !important;
+	width: 120px !important
+}
+
+.postbit-post,
+.postbit-details {
+	border: 0 !important;
+	position: relative
+}
+
+
+.postbit .post {
+    margin-top: 20px !important;
+
+	a img {
+	    background: #eee
+	}
+}
+
+.post-meta {
+	border-bottom: 1px dotted #D3CBC3 !important;
+	height: 18px;
+}
+
+.post-meta-border {
+    padding-bottom: 0 !important;
+    text-align: right;
+    text-indent: 10px;
+}
+
+// space between # and post number
+.postbit .right > a {
+    padding-left: 2px;
+}
+
+// uri hash/target
+.postbit:target {
+
+	.postbit-details-avatar img {
+    	// box-shadow: 0px 0px 3px #21ADE4;
+    	box-shadow: 0px 0px 3px #F54900;
+	}
+
+}
+
+/* username */
+.postbit-details-username a {
+	// border-bottom: 1px dotted #AFAFA4;
+	border-bottom: 1px dotted #D3CBC3;
+	color: #555555 !important;
+	display: block;
+	font-size: 15px !important;
+	height: 18px;
+	min-width: 130px;
+	position: absolute;
+	top: 6px;
+	vertical-align: middle;
+	white-space: nowrap;
+	width: auto;
+	z-index: 2;
+}
+
+// mod/admin colors
+span[style*="e21212"] {
+    color: #EF462C !important;
+    letter-spacing: 0;
+    text-shadow: 0 0 2px #FFFEFE;
+}
+
+// usertitle
+.postbit-details-usertitle {
+    // font-weight: bold;
+    left: 8px;
+    position: absolute;
+    top: 27px;
+    white-space: nowrap;
+    z-index: 5;
+
+
+	* {
+	    display: inline;
+	    padding: 0 1px;
+	}
+
+	br {
+		display: none !important;
+	}
+}
+
+.postbit-details-usertitle + div {
+    margin-top: 37px;
+    white-space: nowrap;
+}
+
+/* avatar */
+.postbit-details-avatar {
+	img {
+		border: 2px solid #fff !important;
+		border-radius: 2px 2px 2px 2px;
+		-webkit-box-shadow: 0 0 2px #AB9D6E;
+		box-shadow: 0 0 2px #AB9D6E;
+		background: #eee !important;
+
+		&:hover {
+		    border: 2px solid #EEEEEE;
+		    box-shadow: 0 0 2px #AD7F3C !important;
+		    opacity: 0.9;
+		}
+	}
+}
+
+/* quotes */
+.postbit blockquote {
+	&.quote { //.postbit.mypost &.quote, 
+		border-right: 0 !important;
+		border-left: 0 !important;
+		// border-top: 1px solid #c5c5ba !important;
+		border-top: 1px solid #BED1E0 !important;
+		// border-bottom: 1px solid #ABAB9D !important;
+		border-bottom: 1px solid #BED1E0 !important;
+		// box-shadow: 1px 1px 3px #B5B5AB !important;
+		box-shadow: 1px 1px 3px #BED1E0 !important;
+		background: #EAEBE7 !important;
+		border-radius: 2px;
+		padding: 7px 8px !important;
+		margin: 8px 16px !important;
+
+	}
+
+	&.quote.code {
+	    background-color: #222222 !important;
+	    background-image: linear-gradient(#2D2D2D, #232323) !important;
+	    text-shadow: 0 0 3px #0D0D0D !important;
+	    border: 0 !important;
+	    border-radius: 2px;
+	    box-shadow: 0 0 2px #555555, 0 0 3px #111111 inset !important;
+	    // color: #93C763 !important;
+	    color: #7DB748 !important;
+	    max-height: 400px !important;
+	    min-width: 90% !important;
+	    padding-bottom: 10px !important;
+	    line-height: 20px !important;
+	    overflow: auto !important;
+
+		.cite {
+			display: none
+		}
+	}
+
+}
+
+.postbit.alt1, .postbit.alt2 {
+	border: 2px solid rgba(255, 255, 255, .8) !important;
+}
+
+.postbit.alt1 {
+	box-shadow: 0 0 2px #bbb inset, 0 0 3px #999;
+}
+
+.postbit.alt2 {
+	box-shadow: 0 0 3px 1px rgba(187, 187, 187, 0.59) inset, 0 0 3px #999;
+}
+
+/* user post */
+.postbit.mypost {
+	// background: linear-gradient(#DEDAD1, #E1DBD2) repeat scroll 0 0 #E3D7BC !important;
+    box-shadow: 0 0 4px 0 #389CC4 inset, 0 0 3px #999;
+    padding-bottom: 5px;
+
+	.postbit-details-username a {
+
+		&:link, &:visited {
+	    	color: #5999BB !important;
+	    	text-shadow: 0 0 1px #eee;
+	    }
+
+	    &:hover {
+	    	color: #526985 !important
+	    }
+	}
+
+	.postbit-details-avatar img {
+	    box-shadow: 0 0 3px #389CC4;
+	}
+}
+
+/* user quotes */
+// quote highlighter
+blockquote.quote[data-username="#{$s-username}"] {
+    // background: linear-gradient(#F4F4F5, #F8F9F4) #F1F2EC !important;
+    border-color: #CBC5B5 #DCCDCB #CFC3B4 #D7C5B8 !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    box-shadow: 0 0 3px #94C6EF inset, 0 0 2px 0px #F9FFE6 !important;
+    
+    .cite {
+        color: #F23C2F !important;
+    }
+}
+
+// highlight
+.highlight {
+	color: #E84242 !important;
+	background: #fcfcfc;
+	padding: 0 2px;
+}
+
+// images
+.post img {
+    vertical-align: text-bottom !important;
+}
