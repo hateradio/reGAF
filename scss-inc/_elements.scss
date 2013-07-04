@@ -6,6 +6,15 @@ html, body {
 	background: #CECEC6 url($i-background) !important;
 }
 
+body {
+    min-width: inherit !important;
+}
+
+// Override this Helvetica mess
+body, input, button, textarea, select, .wysiwyg {
+    font-family: Arial, Verdana, sans-serif !important;
+}
+
 b, strong {
 	font-weight: bold
 }

@@ -152,7 +152,7 @@ a {
         @include orange-button;
     }
 
-    &:hover {
+    &:hover, &:focus {
         @include white-button;
     }
 
@@ -161,7 +161,7 @@ a {
             @include white-button;
         }
 
-        &:hover {
+        &:hover, &:focus {
             @include orange-button;
         }
     }

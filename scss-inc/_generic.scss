@@ -119,12 +119,17 @@ img[src*="type=thumb"] {
 	border-radius: 1px !important;
 	background: #333 !important;
 	color: #333 !important;
+    a {
+        visibility: hidden;
+    }
 }
 
 .spoiler:hover, .spoiler.show {
 	background: transparent !important;
+    a {
+        visibility: visible
+    }
 }
-
 
 // calendar
 img[src="images/neogaf2/misc/calendar_popup.png"] {

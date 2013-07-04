@@ -10,7 +10,8 @@
 
 .postbit-details {
 	margin-left: -130px !important;
-	width: 120px !important
+	width: 120px !important;
+    padding-top: 42px !important;
 }
 
 .postbit-post,
@@ -21,7 +22,7 @@
 
 
 .postbit .post {
-    margin-top: 20px !important;
+    margin-top: 18px !important;
 
 	a img {
 	    background: #eee
@@ -96,10 +97,14 @@ span[style*="e21212"] {
 	br {
 		display: none !important;
 	}
+
+     img {
+        max-height: 20px;
+    }
 }
 
 .postbit-details-usertitle + div {
-    margin-top: 37px;
+    // margin-top: 37px;
     white-space: nowrap;
 }
 
@@ -130,7 +135,7 @@ span[style*="e21212"] {
 		// border-bottom: 1px solid #ABAB9D !important;
 		border-bottom: 1px solid #BED1E0 !important;
 		// box-shadow: 1px 1px 3px #B5B5AB !important;
-		box-shadow: 1px 1px 3px #BED1E0 !important;
+		box-shadow: 1px 1px 3px #CCCFD3, 0 0 2px #FCFCFC inset !important;
 		background: #EAEBE7 !important;
 		border-radius: 2px;
 		padding: 7px 8px !important;
