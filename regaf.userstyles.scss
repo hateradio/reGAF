@@ -1,3 +1,7 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("neogaf.com"), domain("neogaf.net") {
+
 @import "scss-inc/_vars.scss";
 
 // override username
@@ -11,3 +15,4 @@ $s-username: "/*[[username]]*/";
     "scss-inc/_settings.scss",
     "scss-inc/_threads.scss",
     "scss-inc/_posts.scss";
+}
