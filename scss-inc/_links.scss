@@ -152,7 +152,7 @@ a {
         @include orange-button;
     }
 
-    &:hover, &:focus {
+    &:hover, &:focus, &.disabled {
         @include white-button;
     }
 
