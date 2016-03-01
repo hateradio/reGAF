@@ -8,12 +8,15 @@
 // @include        http://*.neogaf.*/forum*
 // ==/UserScript==
 
-// If needed, edit the CSS link (href) below.
+// Edit the CSS link (href) and username below.
 
 (function () {
 	'use strict';
-	var l = document.createElement('link'), s = document.getElementsByTagName('style')[0];
+	var l = document.createElement('link'),
+			s = document.getElementsByTagName('style')[0],
+			username = 'hateradio'; // put your username
+
 	l.rel = 'stylesheet';
-	l.href = 'http://localhost:4567/css/regaf.css?v=' + (+new Date());
+	l.href = 'http://localhost:4567/username/' + encodeURIComponent(username) + '?v=' + (+new Date());
 	s.parentNode.insertBefore(l, s);
 }());

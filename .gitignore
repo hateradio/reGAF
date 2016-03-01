@@ -11,3 +11,4 @@ todo.txt
 .settings/
 *.iml
 target/
+*.map

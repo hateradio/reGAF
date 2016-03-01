@@ -1,6 +1,7 @@
-source 'http://rubygems.org' # source :rubygems
-ruby '2.0.0'
+source 'https://rubygems.org' # source :rubygems
+ruby '2.2.4'
 
 # Thin, Sinatra
+gem 'sass'
 gem 'thin'
-gem 'sinatra', '1.4.4'
+gem 'sinatra', '~> 1.4.7'

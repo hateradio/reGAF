@@ -1,0 +1,60 @@
+// 2x stuff
+
+body.forumhome #container {
+  max-width: none !important;
+}
+
+@media(-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+
+    body, .threadbit-title, .post {
+        font-size: 17px;
+    }
+
+    .smallfont, .tcat {
+        font-size: 13px;
+    }
+
+    .postbit {
+        padding-left: 150px !important;
+    }
+
+    .postbit-details {
+        width: 140px !important;
+        margin-left: -150px !important;
+        padding-top: 50px !important;
+    }
+
+    .post-meta,
+    .postbit-details-username a {
+        height: 22px;
+        min-width: 150px;
+    }
+
+    .postbit-details-usertitle {
+        top: 32px;
+    }
+
+    .postbit-details-avatar {
+        margin-top: 3px !important;
+    }
+
+    .postbit-details > .smallfont + .smallfont {
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 20px !important;
+        line-height: 1.2;
+    }
+
+    .multiquotelink, .post-links {
+        line-height: 1.2 !important;
+    }
+
+    .postbit .post {
+        margin-top: 19px !important;
+    }
+
+    .controlbar textarea,
+    .quickreplyformp textarea {
+        font-size: 0.9em;
+    }
+}

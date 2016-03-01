@@ -64,7 +64,7 @@
     padding: 18px 45px;
 
 	.left:after {
-		content: "re:GAF Skin (#{$s-version}) by hateradio \00a9  2008 - 2013. Don't remove this line.";
+		content: "re:GAF Skin (#{$s-version}) by hateradio \00a9  2008 - 2016. Don't remove this line.";
 		display: block;
 		cursor: help;
 		font-size: 11px
@@ -114,19 +114,19 @@ img[src*="type=thumb"] {
 /* misc */
 
 .spoiler {
+    cursor: default;
 	margin-top: 4px;
-	cursor: default;
 	border-radius: 1px !important;
 	background: #333 !important;
 	color: #333 !important;
-    a {
+    a, img {
         visibility: hidden;
     }
 }
 
 .spoiler:hover, .spoiler.show {
 	background: transparent !important;
-    a {
+    a, img {
         visibility: visible
     }
 }

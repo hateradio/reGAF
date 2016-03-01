@@ -225,3 +225,7 @@ blockquote.quote[data-username="#{$s-username}"] {
 .post img {
     vertical-align: text-bottom !important;
 }
+
+.post .spoiler img {
+    vertical-align: middle !important;
+}
