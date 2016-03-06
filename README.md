@@ -25,13 +25,17 @@ This will install all the recommended gems.
 
 ## Updates (Without Server)
 
-To generate new CSS, run one of the `.bat` files. Edit `$s-username` inside of `_vars.scss` to highlight personal quotes. The userstyles version will output `/*[[username]]*/` for custom settings options.
+To generate new CSS, run one of the `.bat` files. Edit `$s-username` inside of `_vars.scss` to highlight personal quotes.
 
 ## Stylish
 
 To export a style that is compatible with Stylish, execute `out-nested-userstyles.bat`.
 
-When the CSS is generated, copy the contents of `regaf-userstyles.css` into Stylish. As mentioned, this version outputs `/*[[username]]*/` because it can be exported to userstyles.org. You will manually have to edit it.
+When the CSS is generated, copy the contents of `regaf-userstyles.css` into Stylish.
+
+This version will output `/*[[username]]*/` for custom settings that can be used with userstyles.org. You will manually have to edit it.
+
+However, you can edit `regaf.userstyles.scss` if you wish to use generate the files with your username instead.
 
 ## Server
 
