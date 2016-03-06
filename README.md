@@ -2,13 +2,13 @@
 A theme for NeoGAF.
 
 ## Requirements
-* Ruby 2.0
+* Ruby 2.x
 * Sass
 
 ## Optional
-* Sinatra
+* Sinatra (For server)
 * Thin
-* Greasemonkey (Firefox only)
+* Greasemonkey (Firefox) / Tampermonkey (Chrome/Opera/Vivaldi)
 
 ## Get Gems
 
@@ -23,22 +23,35 @@ gem bundle install
 
 This will install all the recommended gems.
 
-## Run
-To make live updates, run a `.bat`. Edit `$s-username` to highlight personal quotes. The userstyles version will output `/*[[username]]*/` for custom settings options.
+## Updates (Without Server)
+
+To generate new CSS, run one of the `.bat` files. Edit `$s-username` inside of `_vars.scss` to highlight personal quotes. The userstyles version will output `/*[[username]]*/` for custom settings options.
+
+## Stylish
+
+To export a style that is compatible with Stylish, execute `out-nested-userstyles.bat`.
+
+When the CSS is generated, copy the contents of `regaf-userstyles.css` into Stylish. As mentioned, this version outputs `/*[[username]]*/` because it can be exported to userstyles.org. You will manually have to edit it.
 
 ## Server
 
-To view live updates on NeoGAF, install the user script (`regaf-view.user.js`) and run the server. Note that once installed with Stylish the script may look a bit different due to CSS priority levels. (Don't forget to use `!important`.)
+To view the style as you edit the Sass, you can use the following steps. First, make sure you disable or remove the style from Stylish.
+
+To view live updates on NeoGAF, install the user script (`regaf-view.user.js`) and run the server. Note that once the style is installed with Stylish, the CSS may look a bit different due to priority levels. (Don't forget to use `!important` to override troublesome items.)
 
 Run the server:
 
     ruby regaf.rb
 
-The style will be found at `http://localhost:<port>/css/regaf.css`, where `<port>` is your sever port.
+The direct CSS file will be found at `http://localhost:<port>/css/regaf.css`, where `<port>` is your sever port.
 
-To customize the username, use `http://localhost:<port>/username/<my-username>`, where `<my-username>` is your username, of course.
+To customize your username, use the special URL `http://localhost:<port>/username/<my-username>`, where `<my-username>` is your username, of course. This will generate a CSS file with the username given. Open the userscript and update it with your username.
 
-Important: Depending on Thin, the port may be different, so the link in the user script (`regaf-view.user.js`) must be edited.
+    Example:
+    http://localhost:4567/username/user123
+
+Important: Depending on Sinatra/Thin, the port may be different, so the link in the user script (`regaf-view.user.js`) must be edited.
 
 ## About
+
 &copy; 2016

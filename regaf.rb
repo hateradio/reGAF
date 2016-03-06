@@ -15,6 +15,7 @@ end
 
 get '/username/:name' do
   content_type 'text/css'
+  sass2css(Dir.pwd + '/regaf.userstyles.scss', Dir.pwd + '/public/css/regaf-userstyles.css')
   css = sass2css(Dir.pwd + '/regaf.scss', Dir.pwd + '/public/css/regaf.css')
 
   if (!params['name'].empty?)
