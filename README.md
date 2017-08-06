@@ -18,7 +18,7 @@ If you don't have `bundler`, install it.
 gem install bundler
 
 # from the source directory
-gem bundle install
+bundle install
 ```
 
 This will install all the recommended gems.
